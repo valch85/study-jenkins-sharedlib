@@ -1,52 +1,57 @@
-# Prerequisites
-*.d
+.gitignore
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# Chef
+.chef/*.pem
+.chef/encrypted_data_bag_secret
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# Ruby
+.rake_test_cache
+.rvmrc
+.rbenv-version
 
-# Precompiled Headers
-*.gch
-*.pch
+# IdeaApps
+.idea
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+.elc
+auto-save-list
+tramp
+.\#*
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# Emacs org-mode
+.org-id-locations
+*_archive
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# SublimeText
+*.sublime-workspace
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# TextMate
+*.tmproj
+*.tmproject
+tmtags
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# Vim
+.*.s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+# OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
